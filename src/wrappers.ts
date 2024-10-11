@@ -1,36 +1,39 @@
 import React from "react";
-import { createComponent, type EventName } from "@lit/react";
+import { createComponent } from "@lit/react";
 import {
-  VscodeBadge as VscodeBadgeWC,
-  VscodeTabs as VscodeTabsWC,
-  VscodeTabHeader as VscodeTabHeaderWC,
-  VscodeTabPanel as VscodeTabPanelWC
+  VscodeBadge,
+  VscodeTabs,
+  VscodeTabHeader,
+  VscodeTabPanel,
 } from "@vscode-elements/elements";
-import {VscTabsSelectEvent} from '@vscode-elements/elements/dist/vscode-tabs/vscode-tabs';
 
-export const VscodeBadge = createComponent({
+export const VscBadge = createComponent({
   tagName: "vscode-badge",
-  elementClass: VscodeBadgeWC,
+  elementClass: VscodeBadge,
   react: React,
+  displayName: "VscBadge",
 });
 
-export const VscodeTabs = createComponent({
+export const VscTabs = createComponent({
   tagName: "vscode-tabs",
-  elementClass: VscodeTabsWC,
+  elementClass: VscodeTabs,
   react: React,
   events: {
-    onVscTabsSelect: 'vsc-tabs-select',
-  }
+    onVscTabsSelect: "vsc-tabs-select",
+  },
+  displayName: "VscTabs",
 });
 
-export const VscodeTabHeader = createComponent({
+export const VscTabHeader = createComponent({
   tagName: "vscode-tab-header",
-  elementClass: VscodeTabHeaderWC,
+  elementClass: VscodeTabHeader,
   react: React,
+  displayName: "VscTabHeader",
 });
 
-export const VscodeTabPanel = createComponent({
+export const VscTabPanel = createComponent({
   tagName: "vscode-tab-panel",
-  elementClass: VscodeTabPanelWC,
+  elementClass: VscodeTabPanel,
   react: React,
+  displayName: "VscTabPanel",
 });

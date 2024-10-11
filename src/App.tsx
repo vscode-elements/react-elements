@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { VscodeTabHeader, VscodeTabPanel, VscodeTabs } from "./wrappers";
+import { VscTabHeader, VscTabPanel, VscTabs } from "./wrappers";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,16 +10,16 @@ function App() {
   return (
     <>
       <div>
-        <VscodeTabs
+        <VscTabs
           onVscTabsSelect={(e) => {
             console.log(e);
           }}
         >
-          <VscodeTabHeader>Lorem</VscodeTabHeader>
-          <VscodeTabPanel>panel content 1</VscodeTabPanel>
-          <VscodeTabHeader>Ipsum</VscodeTabHeader>
-          <VscodeTabPanel>panel content 2</VscodeTabPanel>
-        </VscodeTabs>
+          <VscTabHeader>Lorem</VscTabHeader>
+          <VscTabPanel>panel content 1</VscTabPanel>
+          <VscTabHeader>Ipsum</VscTabHeader>
+          <VscTabPanel>panel content 2</VscTabPanel>
+        </VscTabs>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
