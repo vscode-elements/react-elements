@@ -1,0 +1,24 @@
+{
+  "name": "@vscode-elements/react-elements",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.6",
+    "@vscode-elements/elements": "^1.6.2",
+    "react": "^18.3.1"
+  }
+}
