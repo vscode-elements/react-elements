@@ -2,7 +2,12 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { VscodeTabHeader, VscodeTabPanel, VscodeTabs } from "@vscode-elements/react-elements";
+import {
+  VscodeBadge,
+  VscodeTabHeader,
+  VscodeTabPanel,
+  VscodeTabs,
+} from "@vscode-elements/react-elements";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,12 +15,18 @@ function App() {
   return (
     <>
       <div>
+        <VscodeBadge variant="counter">10</VscodeBadge>
         <VscodeTabs
           onVscTabsSelect={(e) => {
             console.log(e);
           }}
         >
-          <VscodeTabHeader>Lorem</VscodeTabHeader>
+          <VscodeTabHeader>
+            Lorem
+            <span slot="content-after">
+              <VscodeBadge variant="counter">10</VscodeBadge>
+            </span>
+          </VscodeTabHeader>
           <VscodeTabPanel>panel content 1</VscodeTabPanel>
           <VscodeTabHeader>Ipsum</VscodeTabHeader>
           <VscodeTabPanel>panel content 2</VscodeTabPanel>
