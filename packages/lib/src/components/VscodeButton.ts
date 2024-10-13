@@ -1,10 +1,10 @@
 import React from "react";
 import { createComponent } from "@lit/react";
-import { VscodeButton as VscodeButtonWebComponent } from "@vscode-elements/elements";
+import { VscodeButton as WC } from "@vscode-elements/elements";
 
 const VscodeButton = createComponent({
   tagName: "vscode-button",
-  elementClass: VscodeButtonWebComponent,
+  elementClass: WC,
   react: React,
   displayName: "VscodeButton",
 });

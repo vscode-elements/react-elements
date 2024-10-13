@@ -1,10 +1,10 @@
 import React from "react";
 import { createComponent } from "@lit/react";
-import { VscodeCollapsible as VscodeCollapsibleWebComponent } from "@vscode-elements/elements";
+import { VscodeCollapsible as WC } from "@vscode-elements/elements";
 
 const VscodeCollapsible = createComponent({
   tagName: "vscode-collapsible",
-  elementClass: VscodeCollapsibleWebComponent,
+  elementClass: WC,
   react: React,
   displayName: "VscodeCollapsible",
 });

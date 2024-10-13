@@ -1,10 +1,10 @@
 import React from "react";
 import { createComponent } from "@lit/react";
-import { VscodeCheckboxGroup as VscodeCheckboxGroupWebComponent } from "@vscode-elements/elements";
+import { VscodeCheckboxGroup as WC } from "@vscode-elements/elements";
 
 const VscodeCheckboxGroup = createComponent({
   tagName: "vscode-checkbox-group",
-  elementClass: VscodeCheckboxGroupWebComponent,
+  elementClass: WC,
   react: React,
   displayName: "VscodeCheckboxGroup",
 });

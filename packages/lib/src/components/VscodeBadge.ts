@@ -1,10 +1,10 @@
 import React from "react";
 import { createComponent } from "@lit/react";
-import { VscodeBadge as VscodeBadgeWebComponent } from "@vscode-elements/elements";
+import { VscodeBadge as WC } from "@vscode-elements/elements";
 
 const VscodeBadge = createComponent({
   tagName: "vscode-badge",
-  elementClass: VscodeBadgeWebComponent,
+  elementClass: WC,
   react: React,
   displayName: "VscodeBadge",
 });
