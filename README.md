@@ -1,4 +1,4 @@
-# VSCode Elements React Wrapper
+# React Elements
 
 React wrapper components for [VSCode Elements](https://vscode-elements.github.io).
 
