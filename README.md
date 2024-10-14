@@ -2,9 +2,6 @@
 
 React wrapper components for [VSCode Elements](https://vscode-elements.github.io).
 
-> [!WARNING]
-> The package is not complete yet; only a subset of components is covered.
-
 ## Install
 
 ```bash
@@ -33,9 +30,7 @@ function App() {
         >
         <VscodeTabHeader>
           Lorem
-          <span slot="content-after">
-            <VscodeBadge variant="counter">10</VscodeBadge>
-          </span>
+          <VscodeBadge variant="counter" slot="content-after">10</VscodeBadge>
         </VscodeTabHeader>
         <VscodeTabPanel>panel content 1</VscodeTabPanel>
         <VscodeTabHeader>Ipsum</VscodeTabHeader>
