@@ -19,8 +19,6 @@ import {
 } from "@vscode-elements/react-elements";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <VscodeTabs
