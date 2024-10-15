@@ -4,9 +4,11 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import {
   VscodeBadge,
+  VscodeLabel,
   VscodeTabHeader,
   VscodeTabPanel,
   VscodeTabs,
+  VscodeTextfield,
 } from "@vscode-elements/react-elements";
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
   return (
     <>
       <div>
+        <VscodeLabel htmlFor="test">Test</VscodeLabel>
+        <VscodeTextfield id="test"></VscodeTextfield>
+
         <VscodeBadge variant="counter">10</VscodeBadge>
         <VscodeTabs
           onVscTabsSelect={(e) => {

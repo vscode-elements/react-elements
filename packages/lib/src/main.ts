@@ -10,6 +10,7 @@ import VscodeFormContainer from "./components/VscodeFormContainer";
 import VscodeFormGroup from "./components/VscodeFormGroup";
 import VscodeFormHelper from "./components/VscodeFormHelper";
 import VscodeIcon from "./components/VscodeIcon";
+import VscodeLabel from "./components/VscodeLabel";
 import VscodeMultiSelect from "./components/VscodeMultiSelect";
 import VscodeOption from "./components/VscodeOption";
 import VscodeProgressRing from "./components/VscodeProgressRing";
@@ -44,6 +45,7 @@ export {
   VscodeFormGroup,
   VscodeFormHelper,
   VscodeIcon,
+  VscodeLabel,
   VscodeMultiSelect,
   VscodeOption,
   VscodeProgressRing,
