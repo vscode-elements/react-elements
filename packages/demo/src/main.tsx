@@ -5,6 +5,8 @@ import "./index.css";
 import Root from "./routes/Root.tsx";
 import BadgePage from "./routes/BadgePage.tsx";
 import CheckboxPage from "./routes/CheckboxPage.tsx";
+import RadioPage from "./routes/RadioPage.tsx";
+import SingleSelectPage from "./routes/SingleSelectPage.tsx";
 
 if (import.meta.env.DEV) {
   await import("@vscode-elements/webview-playground");
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/checkbox",
         element: <CheckboxPage />,
+      },
+      {
+        path: "/radio",
+        element: <RadioPage />,
+      },
+      {
+        path: "/single-select",
+        element: <SingleSelectPage />,
       },
     ],
   },

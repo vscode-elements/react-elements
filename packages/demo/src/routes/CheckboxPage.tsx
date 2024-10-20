@@ -1,7 +1,7 @@
 import { VscodeCheckbox } from "@vscode-elements/react-elements";
 import { useState } from "react";
 
-export default function BadgePage() {
+export default function CheckboxPage() {
   const [checked, setChecked] = useState(false);
   const [clickCount, setClickCount] = useState(0);
 
