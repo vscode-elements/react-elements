@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "link-all": "npm link @vscode-elements/react-elements && npm link @vscode-elements/elements"
+    "link-all": "npm link @vscode-elements/react-elements @vscode-elements/elements"
   },
   "dependencies": {
     "@vscode-elements/elements": "^1.7.0",
