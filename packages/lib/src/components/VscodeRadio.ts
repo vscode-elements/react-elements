@@ -1,5 +1,5 @@
 import React from "react";
-import { createComponent } from "@lit/react";
+import { createComponent, EventName } from "@lit/react";
 import { VscodeRadio as WC } from "@vscode-elements/elements";
 
 const VscodeRadio = createComponent({
@@ -7,6 +7,10 @@ const VscodeRadio = createComponent({
   elementClass: WC,
   react: React,
   displayName: "VscodeRadio",
+  events: {
+    onChange: "change" as EventName<Event>,
+    onInvalid: "invalid" as EventName<Event>,
+  },
 });
 
 export default VscodeRadio;
