@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/Root.tsx";
 import BadgePage from "./routes/BadgePage.tsx";
+import CheckboxPage from "./routes/CheckboxPage.tsx";
 
 if (import.meta.env.DEV) {
   await import("@vscode-elements/webview-playground");
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/badge",
         element: <BadgePage />,
+      },
+      {
+        path: "/checkbox",
+        element: <CheckboxPage />,
       },
     ],
   },
