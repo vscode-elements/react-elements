@@ -9,9 +9,12 @@
     "./dist"
   ],
   "scripts": {
-    "clean": "rimraf --glob vscode-elements-react-elements-*.tgz & rimraf dist",
+    "clean": "rimraf --glob vscode-elements-react-elements-*.tgz && rimraf dist",
     "build": "npm run clean && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "link": "npm link @vscode-elements/elements"
   },
   "author": "",
   "license": "ISC",
