@@ -7,6 +7,8 @@ import BadgePage from "./routes/BadgePage.tsx";
 import CheckboxPage from "./routes/CheckboxPage.tsx";
 import RadioPage from "./routes/RadioPage.tsx";
 import SingleSelectPage from "./routes/SingleSelectPage.tsx";
+import TextareaPage from "./routes/Textarea.tsx";
+import TextfieldPage from "./routes/Textfield.tsx";
 
 if (import.meta.env.DEV) {
   await import("@vscode-elements/webview-playground");
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/single-select",
         element: <SingleSelectPage />,
+      },
+      {
+        path: "/textarea",
+        element: <TextareaPage />,
+      },
+      {
+        path: "/textfield",
+        element: <TextfieldPage />,
       },
     ],
   },
