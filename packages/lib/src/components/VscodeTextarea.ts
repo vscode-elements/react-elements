@@ -1,5 +1,5 @@
 import React from "react";
-import { createComponent } from "@lit/react";
+import { createComponent, EventName } from "@lit/react";
 import { VscodeTextarea as WC } from "@vscode-elements/elements";
 
 const VscodeTextarea = createComponent({
@@ -7,6 +7,11 @@ const VscodeTextarea = createComponent({
   elementClass: WC,
   react: React,
   displayName: "VscodeTextarea",
+  events: {
+    onChange: "change" as EventName<Event>,
+    onInput: "input" as EventName<InputEvent>,
+    onInvalid: "invalid" as EventName<Event>,
+  },
 });
 
 export default VscodeTextarea;
