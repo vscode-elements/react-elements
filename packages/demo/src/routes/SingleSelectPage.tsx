@@ -3,6 +3,10 @@ import {
   VscodeSingleSelect,
 } from "@vscode-elements/react-elements";
 
+function logEvents(ev: unknown) {
+  console.log(ev);
+}
+
 export default function SingleSelectPage() {
   return (
     <div>
@@ -10,12 +14,8 @@ export default function SingleSelectPage() {
       <h2>Listen "change" and "click" events</h2>
       <p>
         <VscodeSingleSelect
-          onChange={(ev) => {
-            console.log(ev);
-          }}
-          onClick={(ev) => {
-            console.log(ev);
-          }}
+          onChange={logEvents}
+          onClick={logEvents}
         >
           <VscodeOption>Lorem</VscodeOption>
           <VscodeOption>Ipsum</VscodeOption>
@@ -26,9 +26,7 @@ export default function SingleSelectPage() {
       <form action="#">
         <p>
           <VscodeSingleSelect
-            onInvalid={(ev) => {
-              console.log(ev);
-            }}
+            onInvalid={logEvents}
             required
             name="select-2"
           >

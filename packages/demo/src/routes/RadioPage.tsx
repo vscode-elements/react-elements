@@ -1,5 +1,9 @@
 import { VscodeRadio, VscodeRadioGroup } from "@vscode-elements/react-elements";
 
+function logEvents(ev: unknown) {
+  console.log(ev);
+}
+
 export default function RadioPage() {
   return (
     <div>
@@ -7,15 +11,11 @@ export default function RadioPage() {
       <h2>Change event</h2>
       <p>
         <VscodeRadioGroup
-          onChange={(ev) => {
-            console.log(ev);
-          }}
+          onChange={logEvents}
         >
           <VscodeRadio
             name="radio-1"
-            onChange={(ev) => {
-              console.log(ev);
-            }}
+            onChange={logEvents}
           >
             Option #1
           </VscodeRadio>
@@ -29,9 +29,7 @@ export default function RadioPage() {
           <VscodeRadioGroup>
             <VscodeRadio
               name="radio-2"
-              onInvalid={(ev) => {
-                console.log(ev);
-              }}
+              onInvalid={logEvents}
               required
             >
               Option #1
