@@ -7,6 +7,7 @@ import BadgePage from "./routes/BadgePage.tsx";
 import CheckboxPage from "./routes/CheckboxPage.tsx";
 import RadioPage from "./routes/RadioPage.tsx";
 import SingleSelectPage from "./routes/SingleSelectPage.tsx";
+import SplitLayoutPage from "./routes/SplitLayout.tsx";
 import TextareaPage from "./routes/Textarea.tsx";
 import TextfieldPage from "./routes/Textfield.tsx";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/single-select",
         element: <SingleSelectPage />,
+      },
+      {
+        path: "/split-layout",
+        element: <SplitLayoutPage />,
       },
       {
         path: "/textarea",
