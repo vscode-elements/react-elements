@@ -11,6 +11,7 @@ export default function Root() {
           <li><a href="/radio">Radio</a></li>
           <li><a href="/single-select">Single Select</a></li>
           <li><a href="/split-layout">Split Layout</a></li>
+          <li><a href="/table">Table</a></li>
           <li><a href="/textarea">Textarea</a></li>
           <li><a href="/textfield">Textfield</a></li>
         </ul>
