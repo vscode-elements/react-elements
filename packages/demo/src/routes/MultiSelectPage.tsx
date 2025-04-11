@@ -1,31 +1,31 @@
 import {
   VscodeOption,
-  VscodeSingleSelect,
+  VscodeMultiSelect,
 } from "@vscode-elements/react-elements";
 
 function logEvents(ev: unknown) {
   console.log(ev);
 }
 
-export default function SingleSelectPage() {
+export default function MultiSelectPage() {
   return (
     <div>
-      <h1>Single Select</h1>
+      <h1>Multi Select</h1>
       <h2>Listen "change" and "click" events</h2>
       <p>
-        <VscodeSingleSelect
+        <VscodeMultiSelect
           onChange={logEvents}
           onClick={logEvents}
         >
           <VscodeOption>Lorem</VscodeOption>
           <VscodeOption>Ipsum</VscodeOption>
           <VscodeOption>Dolor</VscodeOption>
-        </VscodeSingleSelect>
+        </VscodeMultiSelect>
       </p>
       <h2>Listen "invalid" event</h2>
       <form action="#">
         <p>
-          <VscodeSingleSelect
+          <VscodeMultiSelect
             onInvalid={logEvents}
             required
             name="select-2"
@@ -34,15 +34,15 @@ export default function SingleSelectPage() {
             <VscodeOption>Lorem</VscodeOption>
             <VscodeOption>Ipsum</VscodeOption>
             <VscodeOption>Dolor</VscodeOption>
-          </VscodeSingleSelect>
+          </VscodeMultiSelect>
         </p>
         <button>Submit</button>
       </form>
       <h2>Creatable</h2>
       <form action="#">
         <p>
-          <VscodeSingleSelect
-            onVscSingleSelectCreateOption={logEvents}
+          <VscodeMultiSelect
+            onVscMultiSelectCreateOption={logEvents}
             name="select-3"
             combobox
             creatable
@@ -50,7 +50,7 @@ export default function SingleSelectPage() {
             <VscodeOption>Lorem</VscodeOption>
             <VscodeOption>Ipsum</VscodeOption>
             <VscodeOption>Dolor</VscodeOption>
-          </VscodeSingleSelect>
+          </VscodeMultiSelect>
         </p>
         <button>Submit</button>
       </form>
