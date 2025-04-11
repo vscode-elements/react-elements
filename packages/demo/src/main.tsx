@@ -5,6 +5,7 @@ import "./index.css";
 import Root from "./routes/Root.tsx";
 import BadgePage from "./routes/BadgePage.tsx";
 import CheckboxPage from "./routes/CheckboxPage.tsx";
+import MultiSelectPage from "./routes/MultiSelectPage.tsx";
 import RadioPage from "./routes/RadioPage.tsx";
 import SingleSelectPage from "./routes/SingleSelectPage.tsx";
 import SplitLayoutPage from "./routes/SplitLayout.tsx";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/checkbox",
         element: <CheckboxPage />,
+      },
+      {
+        path: "/multi-select",
+        element: <MultiSelectPage />,
       },
       {
         path: "/radio",

@@ -8,6 +8,7 @@ export default function Root() {
         <ul>
           <li><a href="/badge">Badge</a></li>
           <li><a href="/checkbox">Checkbox</a></li>
+          <li><a href="/multi-select">Multi Select</a></li>
           <li><a href="/radio">Radio</a></li>
           <li><a href="/single-select">Single Select</a></li>
           <li><a href="/split-layout">Split Layout</a></li>
