@@ -2,7 +2,7 @@
 
 React wrapper components for [VSCode Elements](https://vscode-elements.github.io).
 
-> [!INFO]
+> [!NOTE]
 > Starting from React version 19, you no longer need this wrapper library, but you can still use it.
 
 ## Install
