@@ -21,11 +21,11 @@
   "description": "",
   "devDependencies": {
     "rimraf": "^6.0.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@lit/react": "^1.0.6",
-    "@vscode-elements/elements": "^1.13.0"
+    "@lit/react": "^1.0.7",
+    "@vscode-elements/elements": "^1.15.0"
   },
   "peerDependencies": {
     "react": "^18.0.0"
