@@ -2,6 +2,9 @@
 
 React wrapper components for [VSCode Elements](https://vscode-elements.github.io).
 
+> [!WARNING]
+> Starting from React version 19, you no longer need this wrapper library.
+
 ## Install
 
 ```bash
