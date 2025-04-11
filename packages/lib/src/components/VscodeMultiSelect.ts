@@ -1,6 +1,9 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
-import { VscodeMultiSelect as WC } from "@vscode-elements/elements";
+import {
+  VscodeMultiSelect as WC,
+  VscMultiSelectCreateOptionEvent,
+} from "@vscode-elements/elements/dist/vscode-multi-select/vscode-multi-select";
 
 const VscodeMultiSelect = createComponent({
   tagName: "vscode-multi-select",
@@ -10,6 +13,8 @@ const VscodeMultiSelect = createComponent({
   events: {
     onChange: "change" as EventName<Event>,
     onInvalid: "invalid" as EventName<Event>,
+    onVscMultiSelectCreateOption:
+      "vsc-multi-select-create-option" as EventName<VscMultiSelectCreateOptionEvent>,
   },
 });
 
