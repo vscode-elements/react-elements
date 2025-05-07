@@ -1,10 +1,10 @@
 import React from "react";
 import { createComponent, type EventName } from "@lit/react";
-import { VscodeTree as WC } from "@vscode-elements/elements";
 import {
-  VscTreeActionEvent,
-  VscTreeSelectEvent,
-} from "@vscode-elements/elements/dist/vscode-tree/vscode-tree";
+  type VscTreeActionEvent,
+  type VscTreeSelectEvent,
+  VscodeTree as WC,
+} from "@vscode-elements/elements/dist/vscode-tree/vscode-tree.js";
 
 const VscodeTree = createComponent({
   tagName: "vscode-tree",

@@ -1,6 +1,6 @@
 import React from "react";
 import { createComponent } from "@lit/react";
-import { VscodeFormGroup as WC } from "@vscode-elements/elements";
+import { VscodeFormGroup as WC } from "@vscode-elements/elements/dist/vscode-form-group/vscode-form-group.js";
 
 const VscodeFormGroup = createComponent({
   tagName: "vscode-form-group",

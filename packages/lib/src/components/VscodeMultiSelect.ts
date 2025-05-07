@@ -2,8 +2,8 @@ import React from "react";
 import { createComponent, EventName } from "@lit/react";
 import {
   VscodeMultiSelect as WC,
-  VscMultiSelectCreateOptionEvent,
-} from "@vscode-elements/elements/dist/vscode-multi-select/vscode-multi-select";
+  type VscMultiSelectCreateOptionEvent,
+} from "@vscode-elements/elements/dist/vscode-multi-select/vscode-multi-select.js";
 
 const VscodeMultiSelect = createComponent({
   tagName: "vscode-multi-select",

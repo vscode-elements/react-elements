@@ -1,9 +1,9 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
 import {
+  type VscSingleSelectCreateOptionEvent,
   VscodeSingleSelect as WC,
-  VscSingleSelectCreateOptionEvent,
-} from "@vscode-elements/elements/dist/vscode-single-select/vscode-single-select";
+} from "@vscode-elements/elements/dist/vscode-single-select/vscode-single-select.js";
 
 const VscodeSingleSelect = createComponent({
   tagName: "vscode-single-select",

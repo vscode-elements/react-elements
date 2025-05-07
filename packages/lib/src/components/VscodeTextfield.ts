@@ -1,6 +1,6 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
-import { VscodeTextfield as WC } from "@vscode-elements/elements";
+import { VscodeTextfield as WC } from "@vscode-elements/elements/dist/vscode-textfield/vscode-textfield.js";
 
 const VscodeTextfield = createComponent({
   tagName: "vscode-textfield",

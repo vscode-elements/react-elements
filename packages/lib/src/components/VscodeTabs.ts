@@ -1,7 +1,9 @@
 import React from "react";
 import { createComponent, type EventName } from "@lit/react";
-import { VscodeTabs as WC } from "@vscode-elements/elements";
-import { VscTabsSelectEvent } from "@vscode-elements/elements/dist/vscode-tabs/vscode-tabs";
+import {
+  type VscTabsSelectEvent,
+  VscodeTabs as WC,
+} from "@vscode-elements/elements/dist/vscode-tabs/vscode-tabs.js";
 
 const VscodeTabs = createComponent({
   tagName: "vscode-tabs",

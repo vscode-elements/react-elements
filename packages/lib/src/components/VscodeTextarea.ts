@@ -1,6 +1,6 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
-import { VscodeTextarea as WC } from "@vscode-elements/elements";
+import { VscodeTextarea as WC } from "@vscode-elements/elements/dist/vscode-textarea/vscode-textarea.js";
 
 const VscodeTextarea = createComponent({
   tagName: "vscode-textarea",
