@@ -1,7 +1,9 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
-import { VscodeSplitLayout as WC } from "@vscode-elements/elements";
-import { VscSplitLayoutChangeEvent } from "@vscode-elements/elements/dist/vscode-split-layout/vscode-split-layout";
+import {
+  type VscSplitLayoutChangeEvent,
+  VscodeSplitLayout as WC,
+} from "@vscode-elements/elements/dist/vscode-split-layout/vscode-split-layout.js";
 
 const VscodeSplitLayout = createComponent({
   tagName: "vscode-split-layout",

@@ -2,8 +2,8 @@ import React from "react";
 import { createComponent, type EventName } from "@lit/react";
 import {
   VscodeContextMenu as WC,
-  VscContextMenuSelectEvent,
-} from "@vscode-elements/elements/dist/vscode-context-menu/vscode-context-menu";
+  type VscContextMenuSelectEvent,
+} from "@vscode-elements/elements/dist/vscode-context-menu/vscode-context-menu.js";
 
 const VscodeContextMenu = createComponent({
   tagName: "vscode-context-menu",

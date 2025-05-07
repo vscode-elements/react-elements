@@ -1,6 +1,6 @@
 import React from "react";
 import { createComponent, EventName } from "@lit/react";
-import { VscodeRadio as WC } from "@vscode-elements/elements";
+import { VscodeRadio as WC } from "@vscode-elements/elements/dist/vscode-radio/vscode-radio.js";
 
 const VscodeRadio = createComponent({
   tagName: "vscode-radio",
