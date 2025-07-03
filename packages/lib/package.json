@@ -19,6 +19,14 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vscode-elements/react-elements.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vscode-elements/react-elements/issues"
+  },
+  "homepage": "https://vscode-elements.github.io",
   "devDependencies": {
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
