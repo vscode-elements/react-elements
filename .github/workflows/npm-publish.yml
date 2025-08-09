@@ -6,6 +6,7 @@ name: Node.js Package
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - run: cd packages/lib
       - run: npm ci
       - run: npm run build
 
@@ -27,6 +29,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+      - run: cd packages/lib
       - run: npm ci
       - run: npm publish --access public
         env:
