@@ -34,6 +34,9 @@ export default function Root() {
           <li>
             <a href="/textfield">Textfield</a>
           </li>
+          <li>
+            <a href="/tree">Tree</a>
+          </li>
         </ul>
       </aside>
       <main>

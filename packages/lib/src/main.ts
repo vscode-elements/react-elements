@@ -31,6 +31,7 @@ import VscodeTabs from "./components/VscodeTabs.js";
 import VscodeTextarea from "./components/VscodeTextarea.js";
 import VscodeTextfield from "./components/VscodeTextfield.js";
 import VscodeTree from "./components/VscodeTree.js";
+import VscodeTreeItem from "./components/VscodeTreeItem.js";
 
 export {
   VscodeBadge,
@@ -66,4 +67,5 @@ export {
   VscodeTextarea,
   VscodeTextfield,
   VscodeTree,
+  VscodeTreeItem,
 };

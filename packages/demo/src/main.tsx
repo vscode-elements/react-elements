@@ -12,6 +12,7 @@ import SplitLayoutPage from "./routes/SplitLayout.tsx";
 import TablePage from "./routes/TablePage.tsx";
 import TextareaPage from "./routes/Textarea.tsx";
 import TextfieldPage from "./routes/Textfield.tsx";
+import TreePage from "./routes/Tree.tsx";
 
 if (import.meta.env.DEV) {
   await import("@vscode-elements/webview-playground");
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "/textfield",
         element: <TextfieldPage />,
+      },
+      {
+        path: "/tree",
+        element: <TreePage />,
       },
     ],
   },
