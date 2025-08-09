@@ -9,16 +9,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: cd packages/lib
-      - run: npm ci
-      - run: npm run build
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 20
+  #     - run: cd packages/lib
+  #     - run: npm ci
+  #     - run: npm run build
 
   publish-npm:
     # needs: build
@@ -29,8 +29,13 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: cd packages/lib
-      - run: npm ci
-      - run: npm publish --access public
+
+      - name: Install dependencies
+        working-directory: ./packages/lib
+        run: npm ci
+
+      - name: Publish
+        working-directory: ./packages/lib
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
