@@ -13,6 +13,7 @@ import VscodeIcon from "./components/VscodeIcon.js";
 import VscodeLabel from "./components/VscodeLabel.js";
 import VscodeMultiSelect from "./components/VscodeMultiSelect.js";
 import VscodeOption from "./components/VscodeOption.js";
+import VscodeProgressBar from "./components/VscodeProgressBar.js";
 import VscodeProgressRing from "./components/VscodeProgressRing.js";
 import VscodeRadio from "./components/VscodeRadio.js";
 import VscodeRadioGroup from "./components/VscodeRadioGroup.js";
@@ -49,6 +50,7 @@ export {
   VscodeLabel,
   VscodeMultiSelect,
   VscodeOption,
+  VscodeProgressBar,
   VscodeProgressRing,
   VscodeRadio,
   VscodeRadioGroup,
