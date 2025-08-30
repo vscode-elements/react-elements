@@ -8,6 +8,13 @@
   "files": [
     "./dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vscode-elements/react-elements.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vscode-elements/react-elements/issues"
+  },
   "scripts": {
     "clean": "rimraf --glob vscode-elements-react-elements-*.tgz && rimraf dist",
     "build": "npm run clean && tsc",
