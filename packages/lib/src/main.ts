@@ -31,6 +31,8 @@ import VscodeTabPanel from "./components/VscodeTabPanel.js";
 import VscodeTabs from "./components/VscodeTabs.js";
 import VscodeTextarea from "./components/VscodeTextarea.js";
 import VscodeTextfield from "./components/VscodeTextfield.js";
+import VscodeToolbarButton from "./components/VscodeToolbarButton.js";
+import VscodeToolbarContainer from "./components/VscodeToolbarContainer.js";
 import VscodeTree from "./components/VscodeTree.js";
 import VscodeTreeItem from "./components/VscodeTreeItem.js";
 
@@ -68,6 +70,8 @@ export {
   VscodeTabs,
   VscodeTextarea,
   VscodeTextfield,
+  VscodeToolbarButton,
+  VscodeToolbarContainer,
   VscodeTree,
   VscodeTreeItem,
 };
