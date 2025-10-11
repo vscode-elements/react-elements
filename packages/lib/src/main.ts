@@ -1,5 +1,6 @@
 import VscodeBadge from "./components/VscodeBadge.js";
 import VscodeButton from "./components/VscodeButton.js";
+import VscodeButtonGroup from "./components/VscodeButtonGroup.js";
 import VscodeCheckbox from "./components/VscodeCheckbox.js";
 import VscodeCheckboxGroup from "./components/VscodeCheckboxGroup.js";
 import VscodeCollapsible from "./components/VscodeCollapsible.js";
@@ -39,6 +40,7 @@ import VscodeTreeItem from "./components/VscodeTreeItem.js";
 export {
   VscodeBadge,
   VscodeButton,
+  VscodeButtonGroup,
   VscodeCheckbox,
   VscodeCheckboxGroup,
   VscodeCollapsible,
