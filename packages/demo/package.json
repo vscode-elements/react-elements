@@ -15,6 +15,7 @@
     "@vscode-elements/elements": "^2.1.0",
     "@vscode-elements/react-elements": "^1.15.1",
     "@vscode-elements/webview-playground": "^1.9.0",
+    "@vscode/codicons": "^0.0.44",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.0"

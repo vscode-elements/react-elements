@@ -11,6 +11,9 @@ export default function Root() {
             <a href="/badge">Badge</a>
           </li>
           <li>
+            <a href="/button">Button</a>
+          </li>
+          <li>
             <a href="/checkbox">Checkbox</a>
           </li>
           <li>
