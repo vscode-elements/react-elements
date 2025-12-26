@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/Root.tsx";
 import BadgePage from "./routes/BadgePage.tsx";
+import ButtonPage from "./routes/ButtonPage.tsx";
 import CheckboxPage from "./routes/CheckboxPage.tsx";
 import MultiSelectPage from "./routes/MultiSelectPage.tsx";
 import RadioPage from "./routes/RadioPage.tsx";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/badge",
         element: <BadgePage />,
+      },
+      {
+        path: "/button",
+        element: <ButtonPage />,
       },
       {
         path: "/checkbox",

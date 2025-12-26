@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@lit/react": "^1.0.7",
-    "@vscode-elements/elements": "^2.3.1"
+    "@vscode-elements/elements": "^2.4.0"
   },
   "peerDependencies": {
     "react": "17 || 18 || 19",
